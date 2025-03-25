@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>Figma</title>
 </head>
 <body>
@@ -24,7 +26,6 @@
                     </li>
                     <li class="header-item-select">
                         <img src="./images/header-net.svg" alt="header-net" width="18" height="18" />
-                        <div class="border"></div>
                         <select class="header-select-language">
                             <option value="ru">RU</option>
                             <option value="en">EN</option>
@@ -50,7 +51,8 @@
                             <input type="text" placeholder="Поиск" />
                         </div>
                         <a class="consultation-btn" href="tel:+998980013666">
-                            <img class="header-phone-img" src="./images/header-phone2.svg" alt="Phone" width="20" height="20"/>
+                            <img class="header-phone-img" src="./images/header-phone2.svg" alt="Phone" width="20"
+                                height="20" />
                             Консультация
                         </a>
                     </div>
@@ -60,17 +62,62 @@
     </header>
     <main class="site-main">
         <section class="hero-section">
-            <div class="container hero">
-                <div class="hero-content-wrapper">
-                    <h2 class="hero-title">
-                        Мы поставляем бензиновые и дизельные генераторы
-                    </h2>
-                    <p class="hero-desc">
-                        Наша кампания предоставляет такие услуги как продажа и монтаж
-                        генераторов в любос ассортименте
-                    </p>
-                    <button class="hero-btn" type="submit">Консультация</button>
+            <div id="heroCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('./images/carusel-bg.png');">
+                        <div class="hero-section-content container">
+                            <h2 class="hero-title">Мы поставляем бензиновые и дизельные генераторы</h2>
+                            <p class="hero-desc">Наша кампания предоставляет такие услуги как продажа и монтаж генераторов в любос ассортименте</p>
+                            <button class="hero-btn" type="submit">Консультация</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('./images/carusel-bg1.png');">
+                        <div class="hero-section-content container">
+                            <h2 class="hero-title">Мы поставляем бензиновые и дизельные генераторы</h2>
+                            <p class="hero-desc">Наша кампания предоставляет такие услуги как продажа и монтаж генераторов в любос ассортименте</p>
+                            <button class="hero-btn" type="submit">Консультация</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item " style="background-image: url('./images/carusel-bg2.png');">
+                        <div class="hero-section-content container orqa-fon">
+                            <h2 class="hero-title">O нас</h2>
+                            <p class="hero-desc">Наша кампания предоставляет такие услуги как продажа и монтаж генераторов в любос ассортименте</p>
+                            <button class="hero-btn" type="submit">Консультация</button>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-item " style="background-image: url('./images/carusel-bg3.png');">
+                        <div class="hero-section-content container">
+                            <h2 class="hero-title">Полный каталог всех генераторов ,а также производителей</h2>
+                            <p class="hero-desc">На этой старнице вы можете посмотреть всю информацию по фильтрам а также скачать pdf каждого генератора</p>
+                            <button class="hero-btn" type="submit">Консультация</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item " style="background-image: url('./images/carusel-bg4.png');">
+                        <div class="hero-section-content container">
+                            <h2 class="hero-title">Услуги нашей кампании</h2>
+                            <p class="hero-desc">На этой старнице вы можете посмотреть всю информацию по фильтрам а также скачать pdf каждого генератора</p>
+                            <button class="hero-btn" type="submit">Консультация</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item " style="background-image: url('./images/carusel-bg5.png');">
+                        <div class="hero-section-content container">
+                            <h2 class="hero-title">С нами работают более 7 поставщиков</h2>
+                            <p class="hero-desc">Здесь вы можете ознакомиться с каждым из поставщиков</p>
+                            <button class="hero-btn" type="submit">Консультация</button>
+                        </div>
+                    </div>
                 </div>
+         <div class="carousel-controls">
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
             </div>
         </section>
         <section class="about-section">
@@ -83,19 +130,19 @@
                         <h2 class="about-title">O нас</h2>
                         <p class="about-desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            odio in et, lectus sit lorem id integer.
+                            odio in <br> et, lectus sit lorem id integer.
                         </p>
                         <p class="about-desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            odio in et, lectus sit lorem id integer.
+                            odio in <br> et, lectus sit lorem id integer.
                         </p>
                         <p class="about-desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            odio in et, lectus sit lorem id integer.
+                            odio in <br> et, lectus sit lorem id integer.
                         </p>
                         <p class="about-desc">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                            odio in et, lectus sit lorem id integer.
+                            odio in <br> et, lectus sit lorem id integer.
                         </p>
                         <button class="about-btn" type="submit">Подробнее</button>
                     </div>
@@ -254,8 +301,7 @@
                     </ul>
                 </div>
                 <div class="footer-column">
-                    <strong class="footer-strong">Получите бесплатную
-                        консультацию</strong>
+                    <strong class="footer-strong">Получите бесплатную <br> консультацию</strong>
                     <ul class="footer-list-top">
                         <li class="footer-item-top">
                             <input class="footer-input" type="text" id="info" name="info"
@@ -267,5 +313,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
